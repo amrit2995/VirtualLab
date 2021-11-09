@@ -1,0 +1,11 @@
+{% extends "head.html" %}
+{% block content %}
+    <h1>Amrit's Cisco Labs</h1>
+    <div class="main-container row">
+        {% for device_class in servers %}
+        <div class="device-types card col-lg-3 col-md-6 " >
+            <h3><a href="{% url 'Cisco_servers' server_type=device_class %}">{{device_class}}</a></h3>    
+        </div>
+        {% endfor %}
+    </div>
+{% endblock content %}

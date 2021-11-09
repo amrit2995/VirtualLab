@@ -1,0 +1,35 @@
+{% extends 'head.html' %}
+{% block content %}
+
+<h1>Add new devices</h1>
+
+<div class="formcontainer">
+    <form action="{{server_type}}" method="post" >
+        {% csrf_token %}
+        
+        <div class="fieldWrapper formitems labelsform">
+            <label for="{{ form.ipaddress.id_for_label }}" class="labelsform"> IP aaddress </label>
+            <br>
+            {{form.ipaddress}}
+        </div>
+        <div class="fieldWrapper formitems labelsform">
+            <label for="{{ form.fqdn.id_for_label }}"> FQDN  </label>
+            <br>
+            {{form.fqdn}}
+        </div>
+        <div class="fieldWrapper formitems labelsform">
+            <label for="{{ form.username.id_for_label }}"> Username  </label>
+            <br>
+            {{form.username}}
+        </div>
+        <div class="fieldWrapper formitems labelsform">
+            <label for="{{ form.password.id_for_label }}"> Password  </label>
+            <br>
+            {{form.password}}
+        </div>
+        <br>
+        <input type="submit" value="Submit" class="btn btn-primary submit-button">
+    </form>
+</div>
+
+{% endblock %}

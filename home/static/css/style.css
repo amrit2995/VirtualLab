@@ -1,0 +1,94 @@
+h1{
+    font-size: 100px;
+    color: #a8b9ce;
+    padding: 10;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+.main-container{
+    margin:auto 3%;
+}
+
+.device-types{
+    margin: auto;
+    padding: 10px 5px;
+}
+
+.formitems{
+    padding: 10px 5%;
+    margin: 10px auto;
+    
+}
+
+.formcontainer{
+    text-align: left;
+    margin: auto 5%;
+    width: 50%;
+}
+
+.labelsform{
+    padding: 5px;
+    color :rgb(150, 150, 199);
+    font-size: 1.5rem
+
+}
+
+.submit-button{
+    padding: 5px 50px;
+    font-size: 1.5rem;
+    width: 320px;
+}
+
+ /* unvisited link */
+ a:link {
+    color: red;
+    text-decoration: none;
+    
+  }
+  
+  /* visited link */
+  a:visited {
+    color: purple;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+    text-decoration: none;
+
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+    text-decoration: none;
+  } 
+
+  .main-container{
+    width: 100%;
+  }
+
+  .small-containers{
+    margin: 10px 10px;
+  }
+
+  .error-message{
+    color: red;
+    text-align: center;
+  }
+
+  .logincontainer{
+    margin: auto 5%;
+  }
+
+  .signupcontainer{
+    margin: 2% 5%;
+  }
+
+  .create_btn{
+    margin: 5px 50px;
+    width: 200px;
+  }

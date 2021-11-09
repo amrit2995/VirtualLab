@@ -1,0 +1,17 @@
+{% extends "head.html" %}
+{% block content %}
+    <h1>{{type}}</h1>
+    <div class=" main-container">
+            {% for server in servers %}
+            <div class="card small-containers" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">{{server.fqdn}}</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">{{server.ipaddress}}</h6>
+                </div>
+              </div>
+            {% endfor %}
+        </ul>
+    </div>
+    <a href="{% url 'create_device' type=type  %}">Add New</a>
+    
+{% endblock %}

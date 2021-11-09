@@ -1,0 +1,16 @@
+{% extends 'head.html' %}
+{% block content %}
+
+<h1>Login</h1>
+<div class="logincontainer">
+    <h5 class="error-message">{{error}}</h5>
+    <form action="" method="post">
+        {{form.as_p}}
+        <button type="submit" class="btn btn-primary"> Login</button>
+    </form>
+    <br><br>
+    <h6>Not <a href="{% url 'signup' %}">Signed up</a> yet ? </h6>
+</div>
+
+
+{% endblock %}
